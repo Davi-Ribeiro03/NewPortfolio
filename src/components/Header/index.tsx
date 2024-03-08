@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Logo from "../../assets/logo.png";
 import "./Header.css";
 import { IoMenu } from "react-icons/io5";

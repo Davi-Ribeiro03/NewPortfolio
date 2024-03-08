@@ -1,4 +1,3 @@
-import React from "react";
 import "./CardSkills.css";
 
 const CardSkills = ({ img, name }: { img: string; name: string }) => {

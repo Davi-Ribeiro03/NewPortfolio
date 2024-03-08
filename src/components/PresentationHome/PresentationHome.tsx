@@ -1,4 +1,3 @@
-import React from "react";
 import "./presentationHome.css";
 import Robo from "../../assets/robo.png";
 import CardRedesSocias from "../CardRedesSociais/CardRedesSocias";

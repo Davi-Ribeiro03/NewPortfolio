@@ -1,4 +1,3 @@
-import React from "react";
 import "./Experience.css";
 import ellipse from "../../assets/ellipse.png";
 import line from "../../assets/lineExperience.png";

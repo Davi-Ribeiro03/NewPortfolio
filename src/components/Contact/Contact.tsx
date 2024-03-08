@@ -1,4 +1,3 @@
-import React from "react";
 import "./Contact.css";
 import CardContacts from "../CardContacts/CardContacts";
 import email from "../../assets/email.png";
