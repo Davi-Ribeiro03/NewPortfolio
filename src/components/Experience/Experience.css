@@ -1,0 +1,64 @@
+.experience{
+    padding-top: 50px;
+    background: linear-gradient(180deg, rgba(35,42,56,1) 1%, rgba(39,42,49,1) 37%);
+    height: 80vh;
+    padding-left: 80px;
+
+}
+
+.experience h2{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.cardExperience{
+    display: flex;
+    height: 100%;
+}
+
+.experienceImages{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px;
+}
+
+.experienceImages .line{
+    height: 30%;
+}
+
+.experienceTexts{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+.experienceTexts h3{
+    font-size: 30px;
+}
+
+.experienceTexts h4{
+    margin-bottom: 10px;
+}
+
+.experienceTexts {
+   width: 60%;
+}
+
+@media screen and (max-width:500px){
+    .experienceImages{
+        gap: 30px;
+    }
+    .experienceImages .line{
+        height: 40%;
+    }
+    .experience{
+        padding-left: 20px;
+    }
+}

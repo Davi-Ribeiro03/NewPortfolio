@@ -1,0 +1,14 @@
+
+.redes{
+ display: flex;
+ gap: 20px;
+ padding-left: 10px;
+}
+
+.redesImg{
+    transition: 5ms;
+}
+
+.redesImg:hover{
+    scale: 1.2;
+}

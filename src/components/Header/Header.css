@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+.header{
+    background-color:#272A31;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15px;
+}
+.desktop ul {
+    display: flex;
+    gap: 84px;
+}
+
+.desktop ul li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Inika';
+    cursor: pointer;
+    opacity: .7;
+}
+.desktop ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.desktop ul li:hover{
+    opacity: 1;
+    text-decoration: underline white;
+}
+
+.search{
+    background-color: #515050;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25px;
+    background-position-y: center;
+}
+
+.search::placeholder{
+    font-family: "Inika";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menuMobile{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .header{
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .menuMobile{
+        display: block;
+    }
+    
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+    .mobile ul {
+        height: 180px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        position: absolute;
+        background-color: #37373C;
+        top: 70%;
+        right: 0px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    
+    .mobile ul li{
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile ul li:hover{
+        background-color: #FDC025;
+        text-decoration: none;
+
+    }
+    .mobile ul li a{
+        font-weight: bold;
+        font-size: 20px;
+        color: #FDC025;
+
+    }
+    .mobile ul li a:hover{
+        color: white;
+    }
+
+}

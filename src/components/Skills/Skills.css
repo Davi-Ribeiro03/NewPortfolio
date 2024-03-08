@@ -1,0 +1,32 @@
+.skills{
+    height: 40%;
+    background-color: #232a38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 3em;
+}
+.skillsTitle{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.containerSkills{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width:480px){
+    .containerSkills{
+        gap: 10px;
+        width: 90%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,105 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 120%;
+    background-color: #232a38;
+    
+}
+.projects h2{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.projectsImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+
+.projects img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cardProjectImg{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.projectDescription{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e63b;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+.projectDescription .name{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.projectDescription .description{
+    color: white;
+    font-size: 12px;
+    text-align: justify;
+    margin: 0px 10px;
+    opacity: .6;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.projectDescription button{
+    width: 100px ;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background-color: #fdc025ef;
+    border: none;
+    cursor: pointer;
+}
+
+
+.projectDescription:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 670px) {
+    .projectsImg{
+        overflow-y: hidden;
+        width: 90%;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        cursor: grab;  
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; 
+    }
+}

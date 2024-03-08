@@ -1,0 +1,70 @@
+.presentationHome{
+    /* background-color:#272A31; */
+    background-image: linear-gradient(#272A31,#232a38);
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+.presentationHome section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.presentationHome section h2{
+    font-size: 35px;
+    font-weight: 800;
+    color: white;
+    width: 350px;
+    font-family: sans-serif;
+    margin-top: 2.5em;
+}
+
+.presentationHome section h2 strong{
+    color: #FDC025;
+}
+
+.presentationHome section button{
+    border: 3px solid #FDC025;
+    padding: 10px 35px;
+    border-radius: 10px;
+    color: #FDC025;
+    background-color: #272A31;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.presentationHome section button:hover{
+    color: white;
+    background-color: #fdc025da;
+    /* border: 1px solid white; */
+}
+
+.roboImg{
+    width: 360px;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media screen and (max-width: 780px){
+    .presentationHome{
+        height: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .presentationHome section{
+        align-items: center;
+    }
+
+    .presentationHome section h2{
+        text-align: center;
+    }
+}
