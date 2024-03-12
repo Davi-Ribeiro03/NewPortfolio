@@ -1,7 +1,5 @@
 .presentationHome{
-    /* background-color:#272A31; */
     background-image: linear-gradient(#272A31,#232a38);
-    height: 100vh;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
@@ -31,23 +29,20 @@
     padding: 10px 35px;
     border-radius: 10px;
     background-color: #272A31;
+    color: #FDC025;
     font-size: 20px;
     font-weight: bold;
     width: 200px;
     cursor: pointer;
     transition: .5s;
 }
-.presentationHome section button a{
-    text-decoration: none;
-    color: #FDC025;
 
-}
 
 .presentationHome section button:hover{
     color: white;
     background-color: #fdc025da;
-    /* border: 1px solid white; */
 }
+
 
 .roboImg{
     width: 380px;
