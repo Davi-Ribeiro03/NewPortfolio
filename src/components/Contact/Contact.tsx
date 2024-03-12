@@ -1,6 +1,5 @@
 import "./Contact.css";
 import CardContacts from "../CardContacts/CardContacts";
-import email from "../../assets/email.png";
 import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import CardRedesSocias from "../CardRedesSociais/CardRedesSocias";
