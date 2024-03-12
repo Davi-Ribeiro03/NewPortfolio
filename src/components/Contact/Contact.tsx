@@ -5,7 +5,7 @@ import CardRedesSocias from "../CardRedesSociais/CardRedesSocias";
 
 const Contact = () => {
   return (
-    <div className="containerContact">
+    <div className="containerContact" id="contact">
       <h2>Contact me</h2>
 
       <div className="contacts">

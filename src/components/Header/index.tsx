@@ -14,15 +14,21 @@ const Header = () => {
         <ul>
           <li>
             {" "}
-            <a href="#about">About</a>{" "}
+            <a href="#about" onClick={() => setMenuActive(!menuActive)}>
+              About
+            </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="#projects">Portfolio</a>{" "}
+            <a href="#projects" onClick={() => setMenuActive(!menuActive)}>
+              Portfolio
+            </a>{" "}
           </li>
           <li>
             {" "}
-            <a href="#contact">Contact</a>{" "}
+            <a href="#contact" onClick={() => setMenuActive(!menuActive)}>
+              Contact
+            </a>{" "}
           </li>
         </ul>
       </nav>

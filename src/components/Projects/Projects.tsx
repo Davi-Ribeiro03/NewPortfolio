@@ -1,24 +1,35 @@
-import projeto from "../../assets/projeto.png";
+import eletronic from "../../assets/eletronic.png";
+import gym from "../../assets/gym.png";
+import producao from "../../assets/producao.png";
+import pokedex from "../../assets/pokedex.png";
+
 import "./Projects.css";
+// import { Link } from "react-router-dom";
 
 const projetos = [
   {
-    img: projeto,
+    img: eletronic,
+    url: "https://eletronic.vercel.app/",
   },
   {
-    img: projeto,
+    img: gym,
+    url: "https://gym-it2y.vercel.app/",
   },
   {
-    img: projeto,
+    img: pokedex,
+    url: "",
   },
   {
-    img: projeto,
+    img: producao,
+    url: "",
   },
   {
-    img: projeto,
+    img: producao,
+    url: "",
   },
   {
-    img: projeto,
+    img: producao,
+    url: "",
   },
 ];
 
@@ -38,7 +49,9 @@ const Projects = () => {
                 recusandae libero ullam obcaecati facilis praesentium quod non
                 minus.
               </p>
-              <button>See more</button>
+              <a href={projeto.url}>
+                <button>See more</button>
+              </a>
             </div>
           </div>
         ))}

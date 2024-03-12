@@ -1,8 +1,8 @@
 import {
-  FaFacebook,
   FaLinkedinIn,
   FaWhatsapp,
   FaInstagram,
+  FaGithub,
 } from "react-icons/fa";
 import "./CardRedesSocias.css";
 
@@ -16,22 +16,19 @@ const CardRedesSocias = () => {
   return (
     <div className="redes">
       <section className="imgs">
-        <a href="">
-          <FaFacebook {...props} className="redesImg" />
+        <a href="https://github.com/Davi-Ribeiro03">
+          <FaGithub {...props} className="redesImg" />
         </a>
       </section>
 
       <section className="imgs">
-        <a
-          href="
-        "
-        >
+        <a href="https://www.linkedin.com/in/davi-ribeiro-894010232/">
           <FaLinkedinIn {...props} className="redesImg" />
         </a>
       </section>
 
       <section className="imgs">
-        <a href="">
+        <a href="https://wa.me/qr/6XGMCYXZXDMID1">
           <FaWhatsapp {...props} className="redesImg" />
         </a>
       </section>
