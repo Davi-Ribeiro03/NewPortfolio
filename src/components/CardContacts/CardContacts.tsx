@@ -1,15 +1,17 @@
+import { ReactNode } from "react";
 import "./CardContacts.css";
 
 interface CardContactsType {
-  img: string;
+  link: string;
   text: string;
+  children?: ReactNode;
 }
 
-const CardContacts = ({ img, text }: CardContactsType) => {
+const CardContacts = ({ link, text, children }: CardContactsType) => {
   return (
     <div className="cardContacts">
-      <img src={img} alt="" />
-      <p>{text}</p>
+      {children}
+      <a href={link}>{text}</a>
     </div>
   );
 };

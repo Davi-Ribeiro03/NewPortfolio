@@ -10,26 +10,44 @@ const projetos = [
   {
     img: eletronic,
     url: "https://eletronic.vercel.app/",
+    name: "Eletronic",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex recusandae libero ullam obcaecati facilis praesentium quod non minus.",
   },
   {
     img: gym,
     url: "https://gym-it2y.vercel.app/",
+    name: "Gym",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex recusandae libero ullam obcaecati facilis praesentium quod non minus.",
   },
   {
     img: pokedex,
-    url: "",
+    url: "https://pokedex-react-git-develop-felipebarreto-osfdigital.vercel.app/",
+    name: "Pokedex",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex recusandae libero ullam obcaecati facilis praesentium quod non minus.",
   },
   {
     img: producao,
     url: "",
+    name: "Project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex recusandae libero ullam obcaecati facilis praesentium quod non minus.",
   },
   {
     img: producao,
     url: "",
+    name: "Project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex recusandae libero ullam obcaecati facilis praesentium quod non minus.",
   },
   {
     img: producao,
     url: "",
+    name: "Project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex recusandae libero ullam obcaecati facilis praesentium quod non minus.",
   },
 ];
 
@@ -43,12 +61,8 @@ const Projects = () => {
           <div className="cardProjectImg">
             <img src={projeto.img} alt="" />
             <div className="projectDescription">
-              <p className="name">Nome</p>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex
-                recusandae libero ullam obcaecati facilis praesentium quod non
-                minus.
-              </p>
+              <p className="name">{projeto.name}</p>
+              <p className="description">{projeto.description}</p>
               <a href={projeto.url}>
                 <button>See more</button>
               </a>

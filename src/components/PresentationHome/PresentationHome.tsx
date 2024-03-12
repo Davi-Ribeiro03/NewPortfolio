@@ -11,7 +11,10 @@ const PresentationHome = () => {
           Front end Developer
         </h2>
 
-        <button>Contact me</button>
+        <button>
+          {" "}
+          <a href="#contact">Contact me</a>
+        </button>
 
         <CardRedesSocias />
       </section>
