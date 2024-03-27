@@ -1,5 +1,5 @@
 import "./Skills.css";
-import CardSkills from "./CardSkills/CardSkills";
+import CardSkills from "../CardSkills/CardSkills";
 import react from "../../assets/react.png";
 import js from "../../assets/js.png";
 import ts from "../../assets/typescript.png";
@@ -43,8 +43,8 @@ const Skills = () => {
     <div className="skills">
       <h2 className="skillsTitle">My Skills</h2>
       <div className="containerSkills">
-        {skillsLanguages.map((skill: { img: string; name: string }) => (
-          <CardSkills {...skill} />
+        {skillsLanguages.map((skill: { img: string; name: string },index:number) => (
+          <CardSkills {...skill} index={index} key={index}/>
         ))}
       </div>
     </div>

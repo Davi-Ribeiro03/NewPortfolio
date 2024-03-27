@@ -6,7 +6,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* gap: 10px; */
     cursor: pointer;
     margin-bottom: 20px;
 
@@ -18,4 +17,9 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    width: 160px;
+}
+
+.cardContacts:nth-child(2) a{
+    padding-top: 5px;
 }

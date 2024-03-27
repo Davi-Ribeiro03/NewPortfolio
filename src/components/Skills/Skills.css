@@ -23,6 +23,8 @@
     width: 70%;
     height: 100%;
     margin-bottom: 100px;
+    max-width: 840px;
+
 }
 
 @media screen and (max-width:480px){

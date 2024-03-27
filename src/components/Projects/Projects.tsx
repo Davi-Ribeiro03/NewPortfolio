@@ -4,6 +4,7 @@ import producao from "../../assets/producao.png";
 import pokedex from "../../assets/pokedex.png";
 
 import "./Projects.css";
+import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 
 const projetos = [
@@ -57,8 +58,15 @@ const Projects = () => {
       <h2>Projects</h2>
 
       <div className="projectsImg">
-        {projetos.map((projeto) => (
-          <div className="cardProjectImg">
+        {projetos.map((projeto, index) => (
+          <motion.div
+            className="cardProjectImg"
+            key={index}
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: index * 0.5 }}
+            viewport={{ once: true }}
+          >
             <img src={projeto.img} alt="" />
             <div className="projectDescription">
               <p className="name">{projeto.name}</p>
@@ -67,7 +75,7 @@ const Projects = () => {
                 <button>See more</button>
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
