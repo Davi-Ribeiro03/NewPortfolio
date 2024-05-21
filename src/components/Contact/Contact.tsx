@@ -14,7 +14,7 @@ const Contact = () => {
       <h2>Contact me</h2>
 
       <div className="contacts">
-        <CardContacts text="davi@gmail.com" link="">
+        <CardContacts text="davi@gmail.com" link="gmail.com">
           <MdEmail {...props} />
         </CardContacts>
         <CardContacts

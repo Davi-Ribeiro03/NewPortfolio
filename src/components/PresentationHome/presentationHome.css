@@ -4,11 +4,13 @@
     justify-content: space-around;
     padding-top: 30px;
     flex-wrap: wrap;
+    height: 100vh;
 }
 .presentationHome section {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    height: 50vh;
 }
 
 .presentationHome section h2{
@@ -45,8 +47,10 @@
 
 
 .roboImg{
+    margin-top: 20px;
     width: 380px;
-    object-fit: cover;
+    height: 400px;
+    object-fit: contain;
     object-position: center;
 }
 

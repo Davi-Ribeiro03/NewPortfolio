@@ -1,7 +1,7 @@
 import {motion} from "framer-motion"
 
 import "./presentationHome.css";
-import Robo from "../../assets/robo.png";
+import home from "../../assets/home.svg";
 import CardRedesSocias from "../CardRedesSociais/CardRedesSocias";
 
 const PresentationHome = () => {
@@ -28,7 +28,7 @@ const PresentationHome = () => {
         initial={{opacity:0, y:100}} 
         whileInView={{opacity:1, y:0}}
         transition={{duration:1}}
-        className="roboImg" src={Robo} alt="" />
+        className="roboImg" src={home} alt="" />
     </div>
   );
 };

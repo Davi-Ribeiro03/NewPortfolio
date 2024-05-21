@@ -7,6 +7,7 @@
     justify-content: space-around;
     align-items: center;
     height: 15px;
+
 }
 .desktop ul {
     display: flex;
@@ -17,7 +18,9 @@
     list-style: none;
     font-weight: bold;
     font-size: 18px;
-    font-family: 'Inika';
+    /* font-family: 'Inika'; */
+    font-family: sans-serif;
+
     cursor: pointer;
     opacity: .7;
 }

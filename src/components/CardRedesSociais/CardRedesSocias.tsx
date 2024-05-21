@@ -16,25 +16,25 @@ const CardRedesSocias = () => {
   return (
     <div className="redes">
       <section className="imgs">
-        <a href="https://github.com/Davi-Ribeiro03">
+        <a href="https://github.com/Davi-Ribeiro03" target="_blank" rel="noopener noreferrer">
           <FaGithub {...props} className="redesImg" />
         </a>
       </section>
 
       <section className="imgs">
-        <a href="https://www.linkedin.com/in/davi-ribeiro-894010232/">
+        <a href="https://www.linkedin.com/in/davi-ribeiro-894010232/" target="_blank" rel="noopener noreferrer">
           <FaLinkedinIn {...props} className="redesImg" />
         </a>
       </section>
 
       <section className="imgs">
-        <a href="https://wa.me/qr/6XGMCYXZXDMID1">
+        <a href="https://wa.me/qr/6XGMCYXZXDMID1" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp {...props} className="redesImg" />
         </a>
       </section>
 
       <section className="imgs">
-        <a href="">
+        <a href="" target="_blank" rel="noopener noreferrer">
           <FaInstagram {...props} className="redesImg" />
         </a>
       </section>

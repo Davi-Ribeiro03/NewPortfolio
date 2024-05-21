@@ -11,7 +11,7 @@ const CardContacts = ({ link, text, children }: CardContactsType) => {
   return (
     <div className="cardContacts">
       {children}
-      <a href={link}>{text}</a>
+      <a href={link} target="_blank" rel="noopener noreferrer">{text}</a>
     </div>
   );
 };

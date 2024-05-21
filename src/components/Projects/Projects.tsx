@@ -2,6 +2,7 @@ import eletronic from "../../assets/eletronic.png";
 import gym from "../../assets/gym.png";
 import producao from "../../assets/producao.png";
 import pokedex from "../../assets/pokedex.png";
+import quiz from "../../assets/quiz.png"
 
 import "./Projects.css";
 import { motion } from "framer-motion";
@@ -30,9 +31,9 @@ const projetos = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex recusandae libero ullam obcaecati facilis praesentium quod non minus.",
   },
   {
-    img: producao,
-    url: "",
-    name: "Project",
+    img: quiz,
+    url: "https://quiz-daviribeiro03s-projects.vercel.app/",
+    name: "Quiz",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex recusandae libero ullam obcaecati facilis praesentium quod non minus.",
   },
@@ -67,11 +68,11 @@ const Projects = () => {
             transition={{ duration: index * 0.5 }}
             viewport={{ once: true }}
           >
-            <img src={projeto.img} alt="" />
+            <img src={projeto.img} alt=""  />
             <div className="projectDescription">
               <p className="name">{projeto.name}</p>
               <p className="description">{projeto.description}</p>
-              <a href={projeto.url}>
+              <a href={projeto.url} target="_blank" rel="noopener noreferrer">
                 <button>See more</button>
               </a>
             </div>
