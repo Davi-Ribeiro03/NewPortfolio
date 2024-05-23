@@ -7,13 +7,11 @@ const AboutMe = () => {
       <section className="aboutText">
         <div className="linha" />
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-          non unde animi provident sint, repellat explicabo rem ullam nulla
-          deserunt in voluptatum cumque assumenda minima ipsum perferendis velit
-          labore sunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Optio dolore at illum? Possimus perspiciatis aliquam autem eligendi
-          commodi quaerat totam ad quidem obcaecati mollitia sequi neque,
-          laudantium molestias reprehenderit ipsam!
+          Sou um apaixonado estudante de Ciência da Computação, dedicado a
+          explorar os mistérios da tecnologia. Especializando-se em front-end,
+          procuro transformar conceitos em experiências digitais cativantes.
+          Minha jornada é marcada por uma busca incessante por conhecimento e
+          uma habilidade inata de transformar ideias em realidade.
         </p>
       </section>
     </div>
