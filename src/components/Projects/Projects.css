@@ -32,7 +32,7 @@
     height: 250px;
     position: relative;
     cursor: pointer;
-    object-fit: auto;
+    object-fit: cover;
     object-position: center;
 }
 
