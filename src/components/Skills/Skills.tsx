@@ -6,6 +6,8 @@ import ts from "../../assets/typescript.png";
 import css from "../../assets/css.png";
 import html from "../../assets/html.png";
 import figma from "../../assets/figma.png";
+import next from "../../assets/next.png";
+import angular from "../../assets/angular.png";
 
 const skillsLanguages = [
   {
@@ -36,6 +38,14 @@ const skillsLanguages = [
     img: figma,
     name: "Figma",
   },
+  {
+    img: next,
+    name: "Next",
+  },
+  {
+    img: angular,
+    name: "Angular",
+  },
 ];
 
 const Skills = () => {
@@ -43,9 +53,11 @@ const Skills = () => {
     <div className="skills">
       <h2 className="skillsTitle">My Skills</h2>
       <div className="containerSkills">
-        {skillsLanguages.map((skill: { img: string; name: string },index:number) => (
-          <CardSkills {...skill} index={index} key={index}/>
-        ))}
+        {skillsLanguages.map(
+          (skill: { img: string; name: string }, index: number) => (
+            <CardSkills {...skill} index={index} key={index} />
+          )
+        )}
       </div>
     </div>
   );
