@@ -15,7 +15,7 @@
 }
 
 
-.projectsImg{
+.containerProjectsImg{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,42 +27,44 @@
 }
 
 
-.projects img{
+.projects .projectImage{
     width: 100%;
     height: 250px;
     position: relative;
     cursor: pointer;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
+    transition: .2s;
 }
 
+.projects .projectImage:hover{
+   transform: scale(1.02);
+}
+
+
 .cardProjectImg{
-    width: 280px;
-    height: 250px;
+    width: 400px;
+    height: 500px;
     position: relative;
-    /* background-color: aliceblue; */
+    background-color: #2f3a4b;
+    padding: 20px;
+    border-radius: 30px;
 }
 
 .projectDescription{
-    position: absolute;
-    height: 100%;
+    margin-top: 20px;
     width: 100%;
-    background-color: #232a38d7;
-    top: 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     gap: 5px;
-    opacity: 0;
-    cursor: pointer;
     transition: .5s;
 }
 
 
 .projectDescription .name{
     color: white;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: bold;
     font-family: sans-serif;
 }
@@ -71,27 +73,41 @@
     color: white;
     font-size: 12px;
     text-align: justify;
-    margin: 0px 10px;
-    opacity: .6;
     font-family: sans-serif;
     font-weight: bold;
 }
 
+.projectDescription .technologies{
+    display: flex;
+    height: auto;
+    gap: 4px;
+}
+
+.projectDescription .technologies img{
+    height: 24px;
+    width: 24px;
+}
+
+.projectDescription a{
+    width: 50%;
+    margin: 30px auto;
+}
+
 .projectDescription button{
-    width: 100px ;
-    padding: 5px;
+    width: 100% ;
+    padding: 10px;
     border-radius: 5px;
     color: black;
-    font-weight: bold;
     background-color: #fdc025ef;
     border: none;
     cursor: pointer;
+    transition: .2s;
 }
 
 
-.projectDescription:hover{
-    opacity: 1;
-}
+
+
+
 
 @media screen and (max-width: 670px) {
     .projectsImg{
