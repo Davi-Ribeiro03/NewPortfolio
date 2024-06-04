@@ -7,6 +7,8 @@ import idak from "../../assets/idak.png";
 import react from "../../assets/react.png";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
+
+// import next from "../../assets/next.png";
 import typescript from "../../assets/typescript.png";
 
 import "./Projects.css";

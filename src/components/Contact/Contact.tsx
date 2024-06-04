@@ -97,3 +97,23 @@ const Contact = () => {
 };
 
 export default Contact;
+
+{
+  /* <div className="contacts">
+<CardContacts text="davi@gmail.com" link="gmail.com">
+  <MdEmail {...props} />
+</CardContacts>
+<CardContacts
+  text="Davi Ribeiro"
+  link="https://www.linkedin.com/in/davi-ribeiro-894010232/"
+>
+  <FaLinkedinIn {...props} />
+</CardContacts>
+<CardContacts
+  text="(85) 98192-1495"
+  link="https://wa.me/qr/6XGMCYXZXDMID1"
+>
+  <FaWhatsapp {...props} />
+</CardContacts>
+</div> */
+}
