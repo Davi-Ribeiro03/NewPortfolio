@@ -4,6 +4,11 @@ import producao from "../../assets/producao.png";
 import pokedex from "../../assets/pokedex.png";
 import quiz from "../../assets/quiz.png";
 import idak from "../../assets/idak.png";
+import react from "../../assets/react.png";
+import html from "../../assets/html.png";
+import css from "../../assets/css.png";
+import next from "../../assets/next.png";
+import typescript from "../../assets/typescript.png";
 
 import "./Projects.css";
 import { motion } from "framer-motion";
@@ -59,7 +64,7 @@ const Projects = () => {
     <div className="projects" id="projects">
       <h2>Projects</h2>
 
-      <div className="projectsImg">
+      <div className="containerProjectsImg">
         {projetos.map((projeto, index) => (
           <motion.div
             className="cardProjectImg"
@@ -69,10 +74,16 @@ const Projects = () => {
             transition={{ duration: index * 0.5 }}
             viewport={{ once: true }}
           >
-            <img src={projeto.img} alt="" />
+            <img src={projeto.img} alt="" className="projectImage" />
             <div className="projectDescription">
               <p className="name">{projeto.name}</p>
               <p className="description">{projeto.description}</p>
+              <section className="technologies">
+                <img src={react} alt="" />
+                <img src={html} alt="" />
+                <img src={css} alt="" />
+                <img src={typescript} alt="" />
+              </section>
               <a href={projeto.url} target="_blank" rel="noopener noreferrer">
                 <button>See more</button>
               </a>
