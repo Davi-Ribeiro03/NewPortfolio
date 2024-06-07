@@ -5,15 +5,35 @@
     align-items: center;
     gap: 2em;
     background-color: #232a38;
+
+    h2{
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+
+    button{
+        width: 180px ;
+        padding: 10px;
+        border-radius: 5px;
+        color: black;
+        background-color: #fdc025ef;
+        border: none;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .buttonHidden{
+        display: none;
+
+    }
+
+    .buttonVisible{
+        display: block;
+    }
     
 }
-.projects h2{
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-
 
 .containerProjectsImg{
     display: flex;
@@ -21,9 +41,9 @@
     align-items: center;
     gap: 1.5em;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     margin-bottom: 30px;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 
@@ -74,7 +94,6 @@
     font-size: 12px;
     text-align: justify;
     font-family: sans-serif;
-    font-weight: bold;
 }
 
 .projectDescription .technologies{
@@ -92,21 +111,6 @@
     width: 50%;
     margin: 30px auto;
 }
-
-.projectDescription button{
-    width: 100% ;
-    padding: 10px;
-    border-radius: 5px;
-    color: black;
-    background-color: #fdc025ef;
-    border: none;
-    cursor: pointer;
-    transition: .2s;
-}
-
-
-
-
 
 
 @media screen and (max-width: 670px) {

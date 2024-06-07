@@ -1,5 +1,4 @@
 .cardSkills{
-    /* background-color: #515050a2; */
     background-color: #3b4d69;
     width: 150px;
     height: 150px;
@@ -11,14 +10,20 @@
     gap: 15px;
     transition: 0.5s;
     cursor: pointer;
-}
 
-.cardSkills:hover{
-    background-color: #fdc025d5;
-}
-.cardSkills p{
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: sans-serif;
+    &:hover{
+        background-color: #fdc025d5;
+
+    }
+
+    img{
+        width: 60px;
+    }
+
+    p{
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
 }
