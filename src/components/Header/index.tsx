@@ -40,8 +40,6 @@ const Header = () => {
         className="menuMobile"
         onClick={() => setMenuActive(!menuActive)}
       />
-
-      {/* <input className="search" placeholder="search" type="search" /> */}
     </div>
   );
 };
