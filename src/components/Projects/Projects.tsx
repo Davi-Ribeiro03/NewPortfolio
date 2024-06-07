@@ -1,6 +1,5 @@
 import eletronic from "../../assets/eletronic.png";
 import gym from "../../assets/gym.png";
-import producao from "../../assets/producao.png";
 import pokedex from "../../assets/pokedex.png";
 import quiz from "../../assets/quiz.png";
 import idak from "../../assets/idak.png";
