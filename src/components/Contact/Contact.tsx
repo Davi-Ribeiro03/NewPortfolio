@@ -15,10 +15,7 @@ const Contact = () => {
   const onSubmit = (data: any) => {
     toast.success("Salvo com sucesso!");
     reset();
-    console.log(data);
   };
-
-  console.log(errors);
 
   return (
     <div className="containerContact" id="contact">
