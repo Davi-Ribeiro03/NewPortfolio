@@ -13,12 +13,13 @@ const Experience = () => {
           <img src={line} className="line" alt="" />
         </div>
         <div className="experienceTexts">
-          <h3>Jovem aprendiz</h3>
+          <h3>Aprendiz</h3>
           <h4>OSF, Fortaleza</h4>
           <p>
-            Aprendiz na área de desenvolvimento web. Nessa empresa passei por
-            treinamentos na área de front end que envolvem Tecnologias como
-            HTML, CSS, javascript, typescript, React React Native, nextjs etc.
+            Trabalhei no Front-end de um software, onde tive oportunidade de
+            trabalhar na construção de novas features, correção de bugs,
+            refatorações etc. tecnologias: React, javascript, typescript, scss,
+            redux, git etc.
           </p>
         </div>
       </div>
