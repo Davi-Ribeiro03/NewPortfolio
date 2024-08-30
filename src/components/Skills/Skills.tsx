@@ -42,10 +42,6 @@ const skillsLanguages = [
     img: next,
     name: "Next",
   },
-  {
-    img: angular,
-    name: "Angular",
-  },
 ];
 
 const Skills = () => {
