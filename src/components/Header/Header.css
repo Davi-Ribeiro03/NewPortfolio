@@ -2,16 +2,16 @@
 
 .header{
     background-color:#272A31;
-    padding: 30px;
+    padding: 40px 180px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 15px;
 
 }
 .desktop ul {
     display: flex;
-    gap: 84px;
+    gap: 64px;
 }
 
 .desktop ul li{

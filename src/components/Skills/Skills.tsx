@@ -7,7 +7,6 @@ import css from "../../assets/css.png";
 import html from "../../assets/html.png";
 import figma from "../../assets/figma.png";
 import next from "../../assets/next.png";
-import angular from "../../assets/angular.png";
 
 const skillsLanguages = [
   {

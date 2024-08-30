@@ -2,7 +2,8 @@
     background-color: #232a38;
     display: flex;
     flex-direction: column;
-    padding: 40px 0px 20px 100px;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -16,8 +17,11 @@
 .aboutText{
     display: flex;
     flex-direction: row;
-    align-items: baseline ;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
     gap: 10px;
+
 }
 
 .aboutText p{
@@ -27,12 +31,11 @@
     opacity: .8;
     font-family: sans-serif;
     width: 80%;
-}
+    border-left: 2px solid #FDC025;
+    border-right: 2px solid #FDC025;
+    padding-left: 8px;
+    padding-right: 8px;
 
-.linha{
-    height: 2px;
-    width: 30px;
-    background-color: #FDC025;
 }
 
 @media  screen and (max-width: 630px) {
