@@ -20,8 +20,17 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
-    gap: 10px;
+    gap: 24px;
+    background-color: #2F3A4B;
+    border-radius: 10px;
+    width: 700px;
+    padding: 20px 40px;
+    margin-bottom: 32px;
+}
 
+.aboutMeImg{
+    width: 200px;
+    border-radius: 10px;
 }
 
 .aboutText p{
@@ -30,9 +39,7 @@
     font-weight: normal;
     opacity: .8;
     font-family: sans-serif;
-    width: 80%;
-    border-left: 2px solid #FDC025;
-    border-right: 2px solid #FDC025;
+    width: 60%;
     padding-left: 8px;
     padding-right: 8px;
 
