@@ -9,6 +9,7 @@
     font-family: sans-serif;
     font-weight: bold;
     font-size: 35px;
+    text-align: center;
 }
 
 .cardExperience{
@@ -36,6 +37,8 @@
     font-family: sans-serif;
     gap: 15px;
     padding-top: 30px;
+   width: 60%;
+
 }
 
 .experienceTexts h3{
@@ -46,19 +49,27 @@
     margin-bottom: 10px;
 }
 
-.experienceTexts {
-   width: 60%;
-}
+@media screen and (max-width:900px){
 
-@media screen and (max-width:500px){
-    .experienceImages{
-        gap: 30px;
-    }
     .experienceImages .line{
         height: 40%;
     }
+    .experienceImages{
+        gap: 30px;
+    }
     .experience{
-        padding-left: 20px;
-        padding-bottom: 30px;
+        padding: 80px 50px 0px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .experience{
+        p{
+            text-align: justify;
+            width: 100%;
+            font-size: 12px;
+        }
     }
 }

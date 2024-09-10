@@ -45,7 +45,7 @@
 
 }
 
-@media  screen and (max-width: 630px) {
+@media  screen and (max-width: 740px) {
     .about{
         padding: 0px;
         align-items: center;
@@ -54,16 +54,21 @@
     .aboutText{
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
     }
 
     .aboutText p{
-        text-align: justify;
+        text-align: center;
         width: 90%;
     }
 
-    .linha{
-        height: 110px;
-        width: 2px;
-        background-color: #FDC025;
-    }
+}
+
+@media  screen and (max-width: 500px) {
+    .aboutText p{
+        text-align: justify;
+        width: 100%;
+        font-size: 12px;
+    } 
 }

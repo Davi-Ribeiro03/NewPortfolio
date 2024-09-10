@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15px;
+    height: 15px;   
 
 }
 .desktop ul {
@@ -54,10 +54,11 @@
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 845px) {
     .header{
         position: relative;
         justify-content: space-between;
+        padding: 40px;
     }
 
     .menuMobile{
@@ -96,16 +97,12 @@
     .mobile ul li:hover{
         background-color: #FDC025;
         text-decoration: none;
+        color: white;
 
     }
     .mobile ul li a{
         font-weight: bold;
         font-size: 20px;
-        color: #FDC025;
-
-    }
-    .mobile ul li a:hover{
-        color: white;
     }
 
 }

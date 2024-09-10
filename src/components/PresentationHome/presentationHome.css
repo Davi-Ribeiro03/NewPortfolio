@@ -52,7 +52,18 @@
     object-position: center;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 1090px){
+    .presentationHome{
+        padding: 0px 100px;
+    }
+   
+    .roboImg{
+        width: 340px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 890px){
     .presentationHome{
         height: 100%;
         padding-top: 15px;
