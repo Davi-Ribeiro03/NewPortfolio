@@ -7,7 +7,6 @@ import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
 import Thanks from "./components/Thanks/Thanks";
 
-import "./App.css";
 
 const App = () => {
   return (
