@@ -25,25 +25,6 @@
     color: #FDC025;
 }
 
-.presentationHome section button{
-    border: 3px solid #FDC025;
-    padding: 10px 35px;
-    border-radius: 10px;
-    background-color: #272A31;
-    color: #FDC025;
-    font-size: 20px;
-    font-weight: bold;
-    width: 200px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-
-.presentationHome section button:hover{
-    color: white;
-    background-color: #fdc025da;
-}
-
 
 .roboImg{
     width: 380px;

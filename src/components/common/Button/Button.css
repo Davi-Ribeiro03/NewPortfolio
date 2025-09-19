@@ -1,0 +1,17 @@
+.button{
+    border: 1px solid #FDC025;
+    border-radius: 4px;
+    background-color: #101319;
+    color: #FDC025;
+    font-size: 14px;
+    font-weight: bolder;
+    width: auto;
+    cursor: pointer;
+    transition: .5s;
+    line-height: 1.25rem;
+}
+
+.button:hover{
+    color: black;
+    background-color: #fdc025da;
+}

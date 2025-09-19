@@ -6,6 +6,8 @@
     align-items: center;
     padding-top: 50px;
     gap: 3em;
+    scroll-margin: 40px;
+
 }
 .skillsTitle{
     font-size: 35px;

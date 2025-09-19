@@ -1,5 +1,5 @@
 import "./Contact.css";
-import CardRedesSocias from "../CardRedesSociais/CardRedesSocias";
+import CardRedesSocias from "../common/CardRedesSociais/CardRedesSocias";
 import { toast, ToastContainer } from "react-toastify";
 
 import { useForm } from "react-hook-form";

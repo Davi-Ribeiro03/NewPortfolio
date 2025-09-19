@@ -5,6 +5,8 @@
     align-items: center;
     gap: 2em;
     background-color: #232a38;
+    scroll-margin: 80px;
+
 
     h2{
         font-size: 35px;

@@ -2,11 +2,11 @@ import {motion} from "framer-motion"
 
 import "./presentationHome.css";
 import home from "../../assets/home.svg";
-import CardRedesSocias from "../CardRedesSociais/CardRedesSocias";
+import CardRedesSocias from "../common/CardRedesSociais/CardRedesSocias";
 
 const PresentationHome = () => {
   return (
-    <div className="presentationHome">
+    <div className="presentationHome" id="home">
       <motion.section
         initial={{opacity:0, x:-100}}
         whileInView={{opacity:1, x:0}}

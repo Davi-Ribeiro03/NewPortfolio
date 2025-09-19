@@ -1,37 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
 
 .header{
-    background-color:#272A31;
-    padding: 40px 180px;
+    background-color: var(--primary-color);
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 15px;   
-
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+    span{
+        color: var(--secondary-color) ;
+    }
+}
+
 .desktop ul {
     display: flex;
-    gap: 64px;
+    gap: 32px;
 }
 
 .desktop ul li{
     list-style: none;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: sans-serif;
-
+    font-weight: bolder;
     cursor: pointer;
-    opacity: .7;
 }
 .desktop ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
+    font-size: 14px;
+    font-family: "Arial", sans-serif;
+    transition: color .2s;
+
+    &:hover{
+        color: var(--secondary-color);
+    }
 }
 
-.desktop ul li:hover{
-    opacity: 1;
-    text-decoration: underline white;
-}
 
 .search{
     background-color: #515050;
