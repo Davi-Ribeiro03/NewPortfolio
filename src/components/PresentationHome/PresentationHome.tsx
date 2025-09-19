@@ -3,6 +3,7 @@ import {motion} from "framer-motion"
 import "./presentationHome.css";
 import home from "../../assets/home.svg";
 import CardRedesSocias from "../common/CardRedesSociais/CardRedesSocias";
+import Button from "../common/Button/Button";
 
 const PresentationHome = () => {
   return (
@@ -17,9 +18,10 @@ const PresentationHome = () => {
           Front end Developer
         </h2>
 
-        <a href="#contact">
-          <button> Contact me</button>
-        </a>
+        <Button
+        title="Entrar em contato"
+        padding="5px 32px"
+        />
 
         <CardRedesSocias />
       </motion.section>
