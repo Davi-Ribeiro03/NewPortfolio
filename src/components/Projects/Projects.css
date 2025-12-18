@@ -11,7 +11,6 @@
         font-size: 35px;
         color: white;
         font-weight: bold;
-        /* font-family: sans-serif; */
     }
 
     button{
@@ -36,7 +35,7 @@
     
 }
 
-.containerProjectsImg{
+.containerProjects{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,62 +44,63 @@
     width: 100%;
     margin-bottom: 30px;
     max-width: 1200px;
+    position: relative;
 }
 
-
-.projects .projectImage{
-    width: 100%;
-    height: 250px;
+.cardProject{
+    width: 560px;
+    height: 400px;
     position: relative;
-    cursor: pointer;
-    object-fit: cover;
-    object-position: center;
+    background-color: #1E222B;
+    box-shadow: 0px 0px 5px 0px #949799;
     border-radius: 10px;
-    transition: .2s;
-}
 
-.projects .projectImage:hover{
-   transform: scale(1.02);
-}
+    &:hover{
+        .buttons{
+            visibility: visible;
+        }
+    }
 
-
-.cardProjectImg{
-    width: 400px;
-    height: 500px;
-    position: relative;
-    background-color: #2f3a4b;
-    padding: 20px;
-    border-radius: 30px;
+    .projectImage{
+        width: 100%;
+        height: 250px;
+        position: relative;
+        cursor: pointer;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        transition: .2s;
+    }
 }
 
 .projectDescription{
-    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 5px;
     transition: .5s;
+    padding: 0px 20px;
 }
 
 
 .projectDescription .name{
     color: white;
-    font-size: 32px;
-    font-weight: bold;
-    /* font-family: sans-serif; */
+    font-size: 28px;
+    font-weight: 600;
 }
 
 .projectDescription .description{
-    color: white;
+    color: var(--text-color);
     font-size: 12px;
     text-align: justify;
-    /* font-family: sans-serif; */
+    font-weight: 700;
 }
 
 .projectDescription .technologies{
     display: flex;
     height: auto;
     gap: 4px;
+    margin-top: 10px;
 }
 
 .projectDescription .technologies img{
@@ -108,9 +108,29 @@
     width: 24px;
 }
 
-.projectDescription a{
-    width: 50%;
-    margin: 30px auto;
+.buttons{ 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(30,34,43,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    visibility: hidden;
+
+    a{
+        text-decoration: none;
+        width: 100px ;
+        padding: 10px;
+        border-radius: 5px;
+        color: black;
+        background-color: #fdc025ef;
+        border: none;
+        cursor: pointer;
+        transition: .2s;
+    }
 }
 
 

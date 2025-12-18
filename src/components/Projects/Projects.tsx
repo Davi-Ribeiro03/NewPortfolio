@@ -1,16 +1,14 @@
 import eletronic from "../../assets/eletronic.png";
 import gym from "../../assets/gym.png";
 import pokedex from "../../assets/pokedex.png";
-import quiz from "../../assets/quiz.png";
-import idak from "../../assets/idak.png";
 import react from "../../assets/react.png";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import typescript from "../../assets/typescript.png";
 import redux from "../../assets/redux.svg";
-import next from "../../assets/next.png";
-import figma from "../../assets/figma.png";
-import tailwind from "../../assets/tailwind.png";
+import amparo from "../../assets/amparo.png";
+import postgres from "../../assets/postgres.png";
+import springBoot from "../../assets/spring-boot.png";
 
 import "./Projects.css";
 import { motion } from "framer-motion";
@@ -32,7 +30,7 @@ const projetos: ProjetosType[] = [
     url: "https://eletronic.vercel.app/",
     name: "Eletronic",
     description:
-      "Projeto que desenvolvi para estudar alguns conceitos, como redux com middleware thunk, context, rotas etc. Nesse projeto há uma página de login, carrinho de compras e um dashboard simples para admin.",
+      "Um dos primeiros projeto que desenvolvi para estudar alguns conceitos, como redux com middleware thunk, context, rotas etc. Para acessar o projeto, pode utilizar o usuário:Davi e senha:1234 para usuário comum ou usuário:Lucas e senha:5678 para usuário admin.",
     technologies: [html, css, react, typescript, redux],
   },
   {
@@ -55,21 +53,12 @@ const projetos: ProjetosType[] = [
   },
   {
     id: 3,
-    img: quiz,
-    url: "https://quiz-daviribeiro03s-projects.vercel.app/",
-    name: "Quiz",
+    img: amparo,
+    url: "https://github.com/Davi-Ribeiro03/Amparo",
+    name: "Amparo",
     description:
-      "Projeto criado para praticar um pouco sobre next. Nesse projeto criei uma api utilizando Json server e consumo através do axios, além disso utilizei técnias integradas no next como SSR para melhorar o desempenho da aplicação",
-    technologies: [html, css, next, typescript, figma, tailwind],
-  },
-  {
-    id: 4,
-    img: idak,
-    url: "https://idak-silk.vercel.app/",
-    name: "Idak",
-    description:
-      "Landing page criada para praticar um pouco sobre next e tailwindcss",
-    technologies: [html, css, next, typescript, tailwind],
+      "Aplicativo full stack em desenvolvimento para ajudar cuidadores de idosos a gereciar os remédios que os idosos precisam tomar. Esse aplicativo conta também com um assistente com inteligência artificial para tirar dúvidas.",
+    technologies: [react, typescript, postgres, springBoot],
   },
 ];
 
@@ -94,10 +83,10 @@ const Projects = () => {
     <div className="projects" id="projects">
       <h2>Projects</h2>
 
-      <div className="containerProjectsImg">
+      <div className="containerProjects">
         {projetosMobile?.map((projeto, index) => (
           <motion.div
-            className="cardProjectImg"
+            className="cardProject"
             key={index}
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -112,9 +101,11 @@ const Projects = () => {
                   <img src={tech} alt="" key={index} />
                 ))}
               </section>
-              <a href={projeto.url} target="_blank" rel="noopener noreferrer">
-                <button>See more</button>
-              </a>
+              <div className="buttons">
+                <a href={projeto.url} target="_blank" rel="noopener noreferrer">
+                  Live Demo
+                </a>
+              </div>
             </div>
           </motion.div>
         ))}
