@@ -20,7 +20,7 @@ const PresentationHome = () => {
         </h1>
         <h2>Front end Developer</h2>
 
-        <Button title="Entrar em contato" padding="5px 32px" />
+        <Button title="Entrar em contato" padding="10px 32px" />
 
         <CardRedesSocias />
       </motion.section>

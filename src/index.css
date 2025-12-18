@@ -6,6 +6,8 @@
 
 html{
   scroll-behavior: smooth;
+  scrollbar-width: thin; 
+  scrollbar-color: #FDC025 #101319; 
 }
 
 body{
@@ -21,3 +23,15 @@ body{
   --secondary-color: #FDC025;
   --text-color: #94A3B8;
 }
+
+::-webkit-scrollbar {
+   width: 12px; 
+  }
+::-webkit-scrollbar-track { 
+  background: #101319; 
+}
+::-webkit-scrollbar-thumb { 
+  background: #FDC025; 
+  border-radius: 10px; 
+}
+
