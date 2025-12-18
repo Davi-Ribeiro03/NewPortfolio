@@ -5,8 +5,8 @@ import js from "../../assets/js.png";
 import ts from "../../assets/typescript.png";
 import css from "../../assets/css.png";
 import html from "../../assets/html.png";
-import figma from "../../assets/figma.png";
-import next from "../../assets/next.png";
+import node from "../../assets/node.png";
+import postgres from "../../assets/postgres.png";
 
 const skillsLanguages = [
   {
@@ -34,12 +34,12 @@ const skillsLanguages = [
     name: "React Native",
   },
   {
-    img: figma,
-    name: "Figma",
+    img: node,
+    name: "NodeJs",
   },
   {
-    img: next,
-    name: "Next",
+    img: postgres,
+    name: "Postgres",
   },
 ];
 

@@ -1,8 +1,8 @@
 .cardSkills{
-    background-color: #3b4d69;
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
+    background-color: #1E222B;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,11 +11,15 @@
     transition: 0.5s;
     cursor: pointer;
     scroll-margin: 80px;
+    box-shadow: 0px 0px 5px 0px #949799;
 
 
     &:hover{
-        background-color: #fdc025d5;
+        scale: 1.02;
 
+        p {
+            color: #fdc025d5;
+        }
     }
 
     img{
@@ -23,9 +27,8 @@
     }
 
     p{
-        color: white;
-        font-weight: bold;
-        font-size: 16px;
-        /* font-family: sans-serif; */
+        color: whitesmoke;
+        font-weight: 600;
+        font-size: 20px;
     }
 }
