@@ -70,6 +70,10 @@
         position: relative;
         justify-content: space-between;
         padding: 40px;
+
+        button{
+            display: none;
+        }
     }
 
     .menuMobile{

@@ -6,7 +6,7 @@ import Button from "../common/Button/Button";
 const navlinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  {name: "Skills", href: "#skills" },
+  { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
@@ -16,20 +16,20 @@ const Header = () => {
 
   const handleClickNavLink = () => {
     const isMobile = window.innerWidth <= 845;
-    if(!isMobile) return setMenuActive(prev => !prev);
-  }
+    if (!isMobile) return setMenuActive((prev) => !prev);
+  };
 
   return (
     <div className="header">
       <h2 className="logo">
-        <span>{'<'}</span>
+        <span>{"<"}</span>
         Davi
-        <span>{'/>'}</span>
+        <span>{"/>"}</span>
       </h2>
 
       <nav className={`desktop ${menuActive ? "mobile" : ""}`}>
         <ul>
-          {navlinks.map((item,index) => (
+          {navlinks.map((item, index) => (
             <li key={index}>
               <a href={item.href} onClick={handleClickNavLink}>
                 {item.name}
@@ -39,10 +39,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <Button 
-        title="Entrar em contato"
-        padding="5px 12px"
-      />
+      <Button title="Entrar em contato" padding="5px 12px" />
 
       <IoMenu
         size={30}
