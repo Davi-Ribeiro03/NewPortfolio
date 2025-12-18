@@ -39,7 +39,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <Button title="Entrar em contato" padding="5px 12px" />
+      <Button title="Entrar em contato" padding="10px 32px" />
 
       <IoMenu
         size={30}

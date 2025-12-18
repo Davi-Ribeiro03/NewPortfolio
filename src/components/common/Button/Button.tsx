@@ -10,7 +10,12 @@ interface ButtonProps {
 
 const Button = ({ title, padding }: ButtonProps) => {
   return (
-    <a href="#contact">
+    <a
+      href="https://wa.me/5585981721495"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="getInTouchButton"
+    >
       <button className="button" style={{ padding: padding }}>
         {title}
       </button>

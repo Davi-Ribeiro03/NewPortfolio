@@ -65,16 +65,19 @@
     display: none;
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 1050px) {
     .header{
         position: relative;
         justify-content: space-between;
         padding: 40px;
 
-        button{
+        .getInTouchButton{
             display: none;
         }
     }
+}
+
+@media screen and (max-width: 845px) {
 
     .menuMobile{
         display: block;
