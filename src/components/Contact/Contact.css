@@ -10,7 +10,7 @@
 
     h2{
         color: white;
-        font-family: sans-serif;
+        /* font-family: sans-serif; */
         font-size: 35px;
         font-weight: bold;
         text-align: center;
@@ -19,7 +19,7 @@
 
     .form{
         height: auto;
-        font-family: sans-serif;
+        /* font-family: sans-serif; */
 
         form{ 
         display: flex;

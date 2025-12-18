@@ -1,0 +1,16 @@
+.background-circle{
+    background-color: rgba(148, 163, 184, 0.2);
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+
+    .image{
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        background-image: url("../../assets/hero-image.png");
+        background-position: right top;
+        border: solid 3px var(--secondary-color);
+        box-shadow: 0px 0px 20px 0px var(--secondary-color);
+    }
+}

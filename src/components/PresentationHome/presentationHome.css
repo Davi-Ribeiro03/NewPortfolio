@@ -9,19 +9,27 @@
 .presentationHome section {
     display: flex;
     flex-direction: column;
-    gap: 2em;
-}
+    gap: 1em;
 
-.presentationHome section h2{
-    font-size: 35px;
-    font-weight: 800;
-    color: white;
-    width: 350px;
-    font-family: sans-serif;
-}
+    h4{
+        color: #FDC025;
+    }
 
-.presentationHome section h2 strong{
-    color: #FDC025;
+    h1{
+        font-size: 56px;
+        font-weight: 800;
+        color: white;
+
+        strong{
+            color: #FDC025;
+        }
+    }
+
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        color: #94A3B8;
+    }
 }
 
 
