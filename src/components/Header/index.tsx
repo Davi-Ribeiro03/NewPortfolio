@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Header.css";
 import { IoMenu } from "react-icons/io5";
-import Button from "../common/Button/Button";
+import Button from "../common/GetInTouch/GetInTouch";
 
 const navlinks = [
   { name: "Home", href: "#home" },

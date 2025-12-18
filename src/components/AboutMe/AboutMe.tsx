@@ -1,7 +1,7 @@
 import "./AboutMe.css";
 import aboutMeImage from "../../assets/about-me-image.png";
 import { motion } from "framer-motion";
-import Button from "../common/Button/Button";
+import Button from "../common/GetInTouch/GetInTouch";
 
 const AboutMe = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import "./GetInTouch.css";
 
 type ButtonPaddings = "5px 12px" | "10px 32px";
 
@@ -8,19 +8,18 @@ interface ButtonProps {
   padding?: ButtonPaddings;
 }
 
-const Button = ({ title, padding }: ButtonProps) => {
+const GetInTouch = ({ title, padding }: ButtonProps) => {
   return (
     <a
       href="https://wa.me/5585981721495"
       target="_blank"
       rel="noopener noreferrer"
       className="getInTouchButton"
+      style={{ padding: padding }}
     >
-      <button className="button" style={{ padding: padding }}>
-        {title}
-      </button>
+      {title}
     </a>
   );
 };
 
-export default Button;
+export default GetInTouch;

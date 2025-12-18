@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import "./presentationHome.css";
 import CardRedesSocias from "../common/CardRedesSociais/CardRedesSocias";
-import Button from "../common/Button/Button";
+import Button from "../common/GetInTouch/GetInTouch";
 import HeroImage from "../HeroImage/HeroImage";
 
 const PresentationHome = () => {

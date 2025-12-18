@@ -1,4 +1,4 @@
-.button{
+.getInTouchButton{
     border: 1px solid #FDC025;
     border-radius: 4px;
     background-color: #101319;
@@ -9,9 +9,11 @@
     cursor: pointer;
     transition: .5s;
     line-height: 1.25rem;
+    text-decoration: none;
+    max-width: 200px;
 }
 
-.button:hover{
+.getInTouchButton:hover{
     color: white;
     background-color: #fdc025da;
 }
