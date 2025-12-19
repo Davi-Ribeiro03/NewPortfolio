@@ -37,10 +37,14 @@
     font-size: 14px;
     font-family: "Arial", sans-serif;
     transition: color .2s;
+}
 
-    &:hover{
-        color: var(--secondary-color);
-    }
+.desktop ul li a:hover{
+    color: var(--secondary-color);
+}
+
+.desktop ul li.active a{
+    color: var(--secondary-color);
 }
 
 
@@ -61,7 +65,15 @@
     font-weight: bold;
 }
 
+.menuIcon{
+    display: none;
+}
+
 .menuMobile{
+    display: none;
+}
+
+.mobileMenu{
     display: none;
 }
 
@@ -79,6 +91,9 @@
 
 @media screen and (max-width: 845px) {
 
+    .menuIcon{
+        display: block;
+    }
     .menuMobile{
         display: block;
     }
@@ -87,40 +102,113 @@
         display: none;
     }
 
-    .mobile{
-        display: flex;
+    .menuIcon{
+        z-index: 60;
     }
-    .mobile ul {
-        height: 180px;
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
-        position: absolute;
-        background-color: #37373C;
-        top: 70%;
-        right: 0px;
-        width: 150px;
-        border-radius: 10px;
-    }
-    
-    .mobile ul li{
-        width: 100%;
-        text-align: center;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .mobile ul li:hover{
-        background-color: #FDC025;
-        text-decoration: none;
-        color: white;
 
+    .mobileMenu{
+        position: fixed;
+        top: 80px;
+        right: 0;
+        height: 50vh;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform .4s cubic-bezier(.2,.8,.2,1), opacity .3s;
+        background-color: rgb(16 19 25 / 90%);
+        backdrop-filter: blur(10px);
+        color: #dcdcdc;
+        z-index: 55;
+        display: flex;
+        align-items: stretch;
+        padding: 24px;
     }
-    .mobile ul li a{
-        font-weight: bold;
+
+    .mobileMenu.open{
+        transform: translateX(0);
+    }
+
+    .mobileMenuInner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .mobileTitle{
         font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .mobileTitle span{
+        color: var(--secondary-color);
+    }
+
+    .mobileMenu ul{
+        list-style: none;
+        padding: 24px 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .mobileMenu ul li{
+        opacity: 0;
+        transform: translateX(12px);
+        transition: opacity .35s ease, transform .35s ease;
+        width: 100%;
+    }
+    .mobileMenu.open ul li{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .mobileMenu.open ul li:nth-child(1){ transition-delay: .06s; }
+    .mobileMenu.open ul li:nth-child(2){ transition-delay: .09s; }
+    .mobileMenu.open ul li:nth-child(3){ transition-delay: .12s; }
+    .mobileMenu.open ul li:nth-child(4){ transition-delay: .15s; }
+    .mobileMenu.open ul li:nth-child(5){ transition-delay: .18s; }
+
+    .mobileMenu ul li a{
+        text-decoration: none;
+        color: #cfcfcf;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 16px 20px;
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        transition: background-color .18s, color .18s;
+    }
+    .mobileMenu ul li a:hover{
+        background: rgba(253,192,37,0.08);
+        color: #fff;
+    }
+    .mobileMenu ul li.active a{
+        color: var(--secondary-color);
+        background: rgba(253,192,37,0.06);
+    }
+
+    .contactBtn{
+        display: block;
+        margin: 20px auto 30px;
+        width: calc(100% - 48px);
+        max-width: 420px;
+        text-align: center;
+        padding: 14px 18px;
+        border-radius: 10px;
+        border: 2px solid var(--secondary-color);
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-weight: 700;
+        transition: background-color .18s, color .18s, transform .12s;
+    }
+    .contactBtn:hover{
+        background: rgba(253,192,37,0.08);
+        color: #fff;
+        transform: translateY(-2px);
     }
 
 }

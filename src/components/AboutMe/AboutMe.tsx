@@ -1,7 +1,7 @@
 import "./AboutMe.css";
 import aboutMeImage from "../../assets/about-me-image.png";
 import { motion } from "framer-motion";
-import Button from "../common/GetInTouch/GetInTouch";
+import GetInTouch from "../common/GetInTouch/GetInTouch";
 
 const AboutMe = () => {
   return (
@@ -48,7 +48,7 @@ const AboutMe = () => {
             criar aplicativos com os quais os usuários adoram interagir.
           </motion.p>
         </section>
-        <Button title="Entrar em contato" padding="10px 32px" />
+        <GetInTouch title="Entrar em contato" padding="10px 32px" />
       </div>
     </div>
   );

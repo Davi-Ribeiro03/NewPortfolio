@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import "./presentationHome.css";
 import CardRedesSocias from "../common/CardRedesSociais/CardRedesSocias";
-import Button from "../common/GetInTouch/GetInTouch";
+import GetInTouch from "../common/GetInTouch/GetInTouch";
 import HeroImage from "../HeroImage/HeroImage";
 
 const PresentationHome = () => {
@@ -20,7 +20,7 @@ const PresentationHome = () => {
         </h1>
         <h2>Front end Developer</h2>
 
-        <Button title="Entrar em contato" padding="10px 32px" />
+        <GetInTouch title="Entrar em contato" padding="10px 32px" />
 
         <CardRedesSocias />
       </motion.section>
