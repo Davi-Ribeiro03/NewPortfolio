@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 
 import "./presentationHome.css";
 import CardRedesSocias from "../common/CardRedesSociais/CardRedesSocias";
-import GetInTouch from "../common/GetInTouch/GetInTouch";
 import HeroImage from "../HeroImage/HeroImage";
 
 const PresentationHome = () => {
@@ -20,7 +19,9 @@ const PresentationHome = () => {
         </h1>
         <h2>Front end Developer</h2>
 
-        <GetInTouch title="Entrar em contato" padding="10px 32px" />
+        <a href="./curriculo.pdf" download className="downloadCV">
+          Download CV
+        </a>
 
         <CardRedesSocias />
       </motion.section>

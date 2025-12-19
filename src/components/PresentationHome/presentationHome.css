@@ -32,6 +32,30 @@
     }
 }
 
+.downloadCV{
+    border: 1px solid #FDC025;
+    border-radius: 4px;
+    background-color: #101319;
+    color: #FDC025;
+    font-size: 14px;
+    font-weight: bolder;
+    width: auto;
+    cursor: pointer;
+    transition: .5s;
+    line-height: 1.25rem;
+    text-decoration: none;
+    text-align: center;
+    max-width: 200px;
+    padding: 10px 32px; 
+
+    &:hover{
+        color: white;
+        background-color: #fdc025da;
+    }
+}
+
+
+
 @media screen and (max-width: 1244px){
     .presentationHome{
         flex-direction: column;
