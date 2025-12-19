@@ -34,18 +34,16 @@ const AboutMe = () => {
             transition={{ duration: 2 }}
             viewport={{ once: true }}
           >
-            Sou um desenvolvedor frontend apaixonado, com mais de 4 anos de
+            Sou um desenvolvedor frontend apaixonado, com mais de 3 anos de
             experiência criando experiências digitais que combinam design
-            atraente com código funcional. Sou especializado em React,
-            Type5script e tecnologias web modernas. Minha jornada no
-            desenvolvimento web começou durante meus estudos de ciência da
-            computação, onde descobri meu amor por criar interfaces de usuário
-            interativas. Estou constantemente aprendendo novas tecnologias e me
-            mantendo atualizado com as últimas tendências do setor. Quando não
-            estou programando, você pode me encontrar explorando novos cafés,
-            lendo blogs de tecnologia ou trabalhando em projetos de código
-            aberto. Acredito em escrever código limpo e de fácil manutenção e em
-            criar aplicativos com os quais os usuários adoram interagir.
+            atraente com código funcional. Trabalho com React, Typescript e
+            tecnologias web modernas. Minha jornada no desenvolvimento web
+            começou durante meus estudos de ciência da computação, onde descobri
+            meu amor por criar interfaces de usuário interativas. Estou
+            constantemente aprendendo novas tecnologias e me mantendo atualizado
+            com as últimas tendências do setor. Acredito em escrever código
+            limpo e de fácil manutenção e em criar aplicativos com os quais os
+            usuários adoram interagir.
           </motion.p>
         </section>
         <GetInTouch title="Entrar em contato" padding="10px 32px" />
