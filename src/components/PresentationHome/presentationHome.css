@@ -32,14 +32,6 @@
     }
 }
 
-
-.roboImg{
-    width: 380px;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-}
-
 @media screen and (max-width: 1244px){
     .presentationHome{
         flex-direction: column;
@@ -50,8 +42,6 @@
             align-items: center;
         }
     }
-   
-
 }
 
 
@@ -73,6 +63,18 @@
             }
             h4{
                 font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px){
+    .presentationHome{
+        justify-content: center;
+        section{
+            h1{
+                font-size: 40px;
+                text-align: center;
             }
         }
     }

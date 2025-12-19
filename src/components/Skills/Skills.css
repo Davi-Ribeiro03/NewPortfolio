@@ -27,10 +27,15 @@
 
 }
 
+@media screen and (max-width:990px){
+    .containerSkills{
+        padding: 0px 60px;
+    }
+}
 @media screen and (max-width:480px){
     .containerSkills{
         gap: 10px;
-        width: 90%;
+        /* width: 90%; */
         justify-content: center;
     }
 }
