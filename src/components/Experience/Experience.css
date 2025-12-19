@@ -1,73 +1,130 @@
 .experience{
-    padding: 50px 180px 0px;
+    height: 100vh;
+    position: relative;
+}
+
+.line{
+    height: 80%;
+    width: 4px;
+    background: linear-gradient(
+        to bottom, 
+        var(--secondary-color) 50%, 
+        var(--primary-color) 96%
+    );
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
 }
 
 .experience h2{
     color: white;
-    /* font-family: sans-serif; */
     font-weight: bold;
     font-size: 35px;
     text-align: center;
+
+    strong{
+        color: var(--secondary-color);
+    }
 }
 
 .cardExperience{
     display: flex;
     height: 100%;
-}
+    position: absolute;
+    left: 50%;
+    transform: translateX(-7px);
+    width: 400px;
+    height: 240px;
+    margin-top: 20px;
+    gap: 8px;
 
-.experienceImages{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
+    .office{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 
-.experienceImages .line{
-    height: 30%;
-    margin-top: -20px;
-    background-color: black;
+    .ellipse{
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        background-color: var(--secondary-color);
+        box-shadow: 0px 0px 10px 0px var(--secondary-color);
+        z-index: 99;
+    }
+} 
+
+.left{
+    flex-direction: row-reverse;
+    left: 50%;
+    transform: translateX(calc(-100% + 7px));
 }
 
 .experienceTexts{
     display: flex;
     flex-direction: column;
     color: white;
-    /* font-family: sans-serif; */
-    gap: 15px;
-    padding-top: 30px;
-   width: 60%;
+    background-color: #1E222B;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 1px var(--text-color);
+    transition: all 0.5s ease-in-out;
 
+    &:hover{
+        box-shadow: none;
+        border: solid 2px var(--secondary-color);
+        transform: translateY(-5px);
+    }
+    
+    h3{
+        font-size: 26px;
+    }
+    
+    h4{
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-size: 16px;
+        color: var(--text-color);
+        cursor: default;
+    }
+
+    .date{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--text-color);
+        margin-bottom: 10px;
+    }
 }
-
-.experienceTexts h3{
-    font-size: 30px;
-}
-
-.experienceTexts h4{
-    margin-bottom: 10px;
-}
-
+    
 @media screen and (max-width:900px){
 
-    .experienceImages .line{
-        height: 40%;
+    .line{
+        left: 60px;
+        top: 80px;
     }
-    .experienceImages{
-        gap: 30px;
+
+    .cardExperience{
+        left: 60px;
+        width: 90%;
     }
-    .experience{
-        padding: 80px 50px 0px;
-        justify-content: center;
+    .left{
+        transform: none;
+        flex-direction: row;
+        left: 53px;
     }
 }
 
 @media screen and (max-width:500px){
 
-    .experience{
-        p{
-            text-align: justify;
-            width: 100%;
-            font-size: 12px;
-        }
+    .cardExperience{
+        width: 80%;
+        height: auto;
     }
+
 }
