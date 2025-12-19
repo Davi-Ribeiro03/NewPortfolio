@@ -35,6 +35,7 @@
 @media screen and (max-width: 1244px){
     .presentationHome{
         flex-direction: column;
+        flex-wrap: nowrap;
         justify-content: center;
         gap: 5em;
 
