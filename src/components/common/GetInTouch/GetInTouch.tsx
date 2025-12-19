@@ -1,4 +1,3 @@
-import React from "react";
 import "./GetInTouch.css";
 
 type ButtonPaddings = "5px 12px" | "10px 32px";
