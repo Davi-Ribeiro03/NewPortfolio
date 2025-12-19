@@ -43,6 +43,17 @@
             align-items: center;
         }
     }
+
+    @media screen and (max-height: 780px) {
+        .presentationHome{
+            height: 120vh;
+        }
+    }
+    @media screen and (max-height: 660px) {
+        .presentationHome{
+            height: 150vh;
+        }
+    }
 }
 
 
